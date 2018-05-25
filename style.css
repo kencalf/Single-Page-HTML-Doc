@@ -1,0 +1,255 @@
+
+
+
+@font-face {
+    font-family: "Neutraface 2 Display Titling";
+	src: url(../fonts/neutraface.otf);
+}
+
+.panel{
+width: 100%;
+background: url(../images/black.jpg);
+overflow-y: auto;
+overflow-x: auto;
+position: absolute;
+opacity: 0;
+z-index:600;
+margin-top:50px;
+margin-left:-10px;
+text-align:center;
+height:900px;
+}
+.panel:target{
+opacity: 1;
+}
+
+.panel:target a{
+	
+
+}
+
+#photos:target ~  #link-photos,
+#products:target ~  #link-products,
+#investments:target ~  #link-investments,
+#company:target ~  #link-company {
+	
+	/*
+-webkit-transition: all .8s ease-in-out;
+-moz-transition: all .8s ease-in-out;
+-o-transition: all .8s ease-in-out;
+transition: all .8s ease-in-out;*/
+
+
+}
+
+/*---------------------------------------------------------------------------------*/
+
+html { background:#09C;text-align:center; }
+
+body{ background:#09C;}
+
+
+p {
+
+font-family: "Neutraface 2 Display Titling";
+color:#CCC;
+font-size:15px;
+padding:50px;
+line-height:2;
+margin-right:auto;
+margin-left:auto;
+width:80%;
+text-align:justify;
+text-shadow:0 0 5px #000;
+
+}
+
+p:hover{
+-moz-user-select:none;
+-webkit-user-select:none;
+cursor:default;
+}
+
+#nav {
+list-style-type:none;
+margin-top:-20px;
+margin-left:-10px;
+padding:20px;
+text-align:center;
+position:fixed;
+margin-bottom:100px;
+z-index:700;
+background: url(../images/blue.jpg);
+height:60px;
+width:100%;
+
+}
+
+#nav li{
+display:inline-block;}
+
+#nav a {
+font-family: "Neutraface 2 Display Titling";
+text-decoration:none;
+padding-right:10px;
+font-size:22px;
+margin-left:10px;
+margin-right:10px;
+color:#000;
+}
+
+#nav li a:hover {
+cursor:pointer;
+color:#09C;
+}
+
+#logo{ display:block;}
+
+#logo2{ display:none; margin-top:-35px;margin-left:5%; margin-bottom:-35px;}
+/*----------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width : 680px) {
+h1{
+font-size:240px;
+letter-spacing:-43px;
+}
+
+#nav li a{
+	margin-left:4px;
+	margin-right:4px;
+	margin-bottom:30px;
+}
+
+p {width:70%}
+
+#logo{ display:none;}
+#logo2{ display:block;}
+}
+
+
+
+
+
+
+@media only screen and (max-width : 490px) {
+h1{
+font-size:150px;
+letter-spacing:-26px;
+}
+
+
+
+
+p {	
+width:80%;
+padding:20px;
+}
+
+}
+
+
+
+
+@media only screen and (max-width : 350px) {
+
+
+#nav li{
+display: list-item;}
+
+#nav {
+list-style-type:none;
+margin-top:-20px;
+margin-left:-10px;
+padding:20px;
+text-align:center;
+position:fixed;
+margin-bottom:140px;
+height:200px;
+
+}
+
+
+
+#nav li a{
+	margin-left:auto;
+	margin-right:auto;
+	font-size:200%;
+}
+
+
+
+.panel{
+width: 100%;
+background: url(../images/black.jpg);
+overflow-y: auto;
+overflow-x: auto;
+position: absolute;
+opacity: 0;
+z-index:600;
+margin-top:150px;
+text-align:center;
+height:900px;
+}
+
+
+
+#logo2{ display:block; position:fixed; width:100px; margin-left:-20px; margin-top:0px;}
+
+}
+
+/*---Iphone*/
+@media screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+#nav li{
+display: list-item;}
+
+#nav {
+list-style-type:none;
+margin-top:-20px;
+margin-left:-10px;
+padding:20px;
+text-align:center;
+position:fixed;
+margin-bottom:140px;
+height:600px;
+width:100%;
+
+}
+
+
+
+#nav li a{
+	margin-left:auto;
+	margin-right:auto;
+	font-size:700%;
+	width:100%;
+}
+
+
+
+.panel{
+width: 100%;
+background: url(../images/black.jpg);
+overflow-y: auto;
+overflow-x: auto;
+position: absolute;
+opacity: 0;
+z-index:600;
+margin-top:700px;
+text-align:center;
+height:900px;
+}
+
+
+
+#logo2{ display:block; position:fixed; width:100px; margin-left:-20px; margin-top:0px;}
+
+#logo{display:none;}
+
+
+
+}
+
+
+
